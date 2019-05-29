@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'drawer.dart';
 
 void main() {
   runApp(new MaterialApp(
@@ -19,6 +20,7 @@ class Instagram extends StatelessWidget {
           )
         ],
       ),
+      drawer: DrawerApp(),
       body: ListView(
         children: [
           new Container(
