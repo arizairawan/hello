@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'twitter.dart';
 import 'instagram.dart';
 
 void main() {
@@ -44,14 +44,13 @@ class Myapp extends StatelessWidget {
                   ),
                 ),
                 new Container(
-                  padding: EdgeInsets.all(10),
-                  color: Colors.red,
-                  child: Text("kotak 2"),
-                ),
-                new Container(
-                  padding: EdgeInsets.all(10),
-                  color: Colors.blue,
-                  child: Text("kotak 3"),
+                  child: RaisedButton(
+                    child: Text('Twitter'),
+                    onPressed: () {
+                      Navigator.of(context).push(new MaterialPageRoute(
+                          builder: (BuildContext context) => new Twitter()));
+                    },
+                  ),
                 ),
               ],
             ),
